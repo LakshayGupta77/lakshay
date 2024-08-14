@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    background-image: url("https://i.pinimg.com/originals/1d/87/34/1d8734b1b58583991de6f1350389746d.png");
+    transition: background-image 2s ease-in-out;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    z-index: -1;
+    transition: filter 2s ease-in-out,background-color 1s ease-in;
+}
+#header{
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: rgba(0, 0, 0, 0.443);
+    transition: opacity 2s ease-in-out;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:2;
+}
+#showtext{
+    text-align: center;
+    margin-top: 300px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: large;
+    transition: opacity 2s ease-in-out;
+}
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.love-emoji {
+    position: absolute;
+    font-size: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+@keyframes moveUpAndFade {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+#end{
+    margin: 0%;
+    opacity: 0;
+    top: 50%;
+    left: 40%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    transition: opacity 2s ease-in-out;
+    color: beige;
+    font-size:xx-large;
+    position: absolute;
+}
+#start-button{
+    text-align: center;
+    position: absolute;
+    margin: 0%;
+    top: 50%;
+    left: 45%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    transition: opacity 2s ease-in-out;
+    color: beige;
+    font-size: xx-large;
+    z-index: 9999;
+    transform: scale(1);
+    transition: transform 1s ease-in-out , opacity 2s ease-in-out;
+}
+#heart{
+    font-size: 300%;
+    transition: font-size 1s ease-in-out;
+
+}
+#heart:hover{
+    font-size: 330%;
+}
